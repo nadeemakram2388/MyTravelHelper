@@ -9,7 +9,8 @@
 import UIKit
 
 class SearchTrainPresenter:ViewToPresenterProtocol {
-    var stationsList:[Station] = [Station]()
+    var stations :[StationName] = [StationName]()
+    var trains: [StationTrain]?
 
     func searchTapped(source: String, destination: String) {
         let sourceStationCode = getStationCode(stationName: source)
@@ -19,37 +20,41 @@ class SearchTrainPresenter:ViewToPresenterProtocol {
     
     var interactor: PresenterToInteractorProtocol?
     var router: PresenterToRouterProtocol?
-    var view:PresenterToViewProtocol?
+    var view: PresenterToViewProtocol?
 
     func fetchallStations() {
         interactor?.fetchallStations()
     }
 
-    private func getStationCode(stationName:String)->String {
-        let stationCode = stationsList.filter{$0.stationDesc == stationName}.first
-        return stationCode?.stationCode.lowercased() ?? ""
+    private func getStationCode(stationName: String) -> String {
+        return stations.filter{$0.stationDesc == stationName}.first?.stationCode?.lowercased() ?? ""
     }
 }
 
 extension SearchTrainPresenter: InteractorToPresenterProtocol {
+    
     func showNoInterNetAvailabilityMessage() {
-        view!.showNoInterNetAvailabilityMessage()
+        view?.showNoInterNetAvailabilityMessage()
     }
 
     func showNoTrainAvailbilityFromSource() {
-        view!.showNoTrainAvailbilityFromSource()
+        view?.showNoTrainAvailbilityFromSource()
     }
 
     func fetchedTrainsList(trainsList: [StationTrain]?) {
         if let _trainsList = trainsList {
-            view!.updateLatestTrainList(trainsList: _trainsList)
+            view?.updateLatestTrainList(trainsList: _trainsList)
         }else {
-            view!.showNoTrainsFoundAlert()
+            view?.showNoTrainsFoundAlert()
         }
     }
     
-    func stationListFetched(list: [Station]) {
-        stationsList = list
-        view!.saveFetchedStations(stations: list)
+    func stationListFetched(list: [StationName]) {
+        stations = list
+        view?.saveFetchedStations(stations: list)
+    }
+    
+    func updateFavorite(station: StationName) {
+        interactor?.updateFavorite(station: station)
     }
 }

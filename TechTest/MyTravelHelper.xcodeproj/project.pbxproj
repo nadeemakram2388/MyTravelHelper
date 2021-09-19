@@ -41,6 +41,13 @@
 		DB3DE39126F7184A008E8EE1 /* NetworkSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE39026F7184A008E8EE1 /* NetworkSessionProtocol.swift */; };
 		DB3DE39326F71862008E8EE1 /* NetworkDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE39226F71862008E8EE1 /* NetworkDataTaskProtocol.swift */; };
 		DB3DE39526F71875008E8EE1 /* NetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE39426F71875008E8EE1 /* NetworkRequestProtocol.swift */; };
+		DB3DE39726F73AE6008E8EE1 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE39626F73AE6008E8EE1 /* NSObjectExtension.swift */; };
+		DB3DE39A26F7540E008E8EE1 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE39926F7540E008E8EE1 /* CoreDataHelper.swift */; };
+		DB3DE39D26F754D3008E8EE1 /* MyTravelHelper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE39B26F754D3008E8EE1 /* MyTravelHelper.xcdatamodeld */; };
+		DB3DE3A026F75761008E8EE1 /* StationName+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE39E26F75761008E8EE1 /* StationName+CoreDataClass.swift */; };
+		DB3DE3A126F75761008E8EE1 /* StationName+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE39F26F75761008E8EE1 /* StationName+CoreDataProperties.swift */; };
+		DB3DE3A326F7723A008E8EE1 /* StationListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE3A226F7723A008E8EE1 /* StationListCell.swift */; };
+		DB3DE3A626F7809E008E8EE1 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE3A526F7809E008E8EE1 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +103,13 @@
 		DB3DE39026F7184A008E8EE1 /* NetworkSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionProtocol.swift; sourceTree = "<group>"; };
 		DB3DE39226F71862008E8EE1 /* NetworkDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataTaskProtocol.swift; sourceTree = "<group>"; };
 		DB3DE39426F71875008E8EE1 /* NetworkRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocol.swift; sourceTree = "<group>"; };
+		DB3DE39626F73AE6008E8EE1 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		DB3DE39926F7540E008E8EE1 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		DB3DE39C26F754D3008E8EE1 /* MyTravelHelper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyTravelHelper.xcdatamodel; sourceTree = "<group>"; };
+		DB3DE39E26F75761008E8EE1 /* StationName+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StationName+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		DB3DE39F26F75761008E8EE1 /* StationName+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StationName+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		DB3DE3A226F7723A008E8EE1 /* StationListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListCell.swift; sourceTree = "<group>"; };
+		DB3DE3A526F7809E008E8EE1 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +184,7 @@
 		753F0845223618AB00175107 /* MyTravelHelper */ = {
 			isa = PBXGroup;
 			children = (
+				DB3DE39826F753DC008E8EE1 /* Database */,
 				DB3DE37526F71657008E8EE1 /* Networking */,
 				DB3DE36F26F70D74008E8EE1 /* SupportingFiles */,
 				DB3DE36C26F70B83008E8EE1 /* Extension */,
@@ -224,6 +239,8 @@
 		753F086A2236196400175107 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				DB3DE39E26F75761008E8EE1 /* StationName+CoreDataClass.swift */,
+				DB3DE39F26F75761008E8EE1 /* StationName+CoreDataProperties.swift */,
 				753C8FA222361EC9005FF13B /* StationInfo.swift */,
 				753C8FA322361EC9005FF13B /* Stations.swift */,
 				753C8FA122361EC9005FF13B /* TrainMovements.swift */,
@@ -260,6 +277,7 @@
 			children = (
 				753C8FAD22362463005FF13B /* SearchTrainViewController.swift */,
 				753C8FB92236BD80005FF13B /* TrainInfoCell.swift */,
+				DB3DE3A226F7723A008E8EE1 /* StationListCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,6 +289,7 @@
 				753F087022361A6500175107 /* AppConstants.swift */,
 				753C8FB422367D1C005FF13B /* AppUtils.swift */,
 				753C8FB622367DF4005FF13B /* ProgressIndicator.swift */,
+				DB3DE3A526F7809E008E8EE1 /* CustomTextField.swift */,
 			);
 			path = "App-utils";
 			sourceTree = "<group>";
@@ -278,6 +297,7 @@
 		DB3DE36C26F70B83008E8EE1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DB3DE39626F73AE6008E8EE1 /* NSObjectExtension.swift */,
 				DB3DE36D26F70B99008E8EE1 /* StringExtension.swift */,
 			);
 			path = Extension;
@@ -287,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				DB3DE37426F70E1A008E8EE1 /* Localizable.strings */,
+				DB3DE39B26F754D3008E8EE1 /* MyTravelHelper.xcdatamodeld */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -348,6 +369,14 @@
 				DB3DE39426F71875008E8EE1 /* NetworkRequestProtocol.swift */,
 			);
 			path = NetworkProtocols;
+			sourceTree = "<group>";
+		};
+		DB3DE39826F753DC008E8EE1 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				DB3DE39926F7540E008E8EE1 /* CoreDataHelper.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,14 +544,18 @@
 			files = (
 				753C8FBA2236BD80005FF13B /* TrainInfoCell.swift in Sources */,
 				DB3DE38726F71791008E8EE1 /* NetworkMethod.swift in Sources */,
+				DB3DE39A26F7540E008E8EE1 /* CoreDataHelper.swift in Sources */,
+				DB3DE39D26F754D3008E8EE1 /* MyTravelHelper.xcdatamodeld in Sources */,
 				DB3DE38B26F717B8008E8EE1 /* NetworkError.swift in Sources */,
 				753C8FA822361FC0005FF13B /* SearchTrainProtocols.swift in Sources */,
 				DB3DE36E26F70B99008E8EE1 /* StringExtension.swift in Sources */,
 				753C8FAA2236228C005FF13B /* SearchTrainPresenter.swift in Sources */,
 				DB3DE37C26F7171D008E8EE1 /* NetworkResponseExtension.swift in Sources */,
+				DB3DE39726F73AE6008E8EE1 /* NSObjectExtension.swift in Sources */,
 				DB3DE39126F7184A008E8EE1 /* NetworkSessionProtocol.swift in Sources */,
 				DB3DE37826F71686008E8EE1 /* NetworkConstant.swift in Sources */,
 				DB3DE38E26F7181B008E8EE1 /* NetworkApiEndpoint.swift in Sources */,
+				DB3DE3A126F75761008E8EE1 /* StationName+CoreDataProperties.swift in Sources */,
 				753C8FAE22362463005FF13B /* SearchTrainViewController.swift in Sources */,
 				753C8FB722367DF4005FF13B /* ProgressIndicator.swift in Sources */,
 				753C8FB522367D1C005FF13B /* AppUtils.swift in Sources */,
@@ -530,6 +563,7 @@
 				753C8FBC223731E3005FF13B /* Reachability.swift in Sources */,
 				DB3DE38526F71775008E8EE1 /* NetworkClient.swift in Sources */,
 				753C8FA622361EC9005FF13B /* Stations.swift in Sources */,
+				DB3DE3A026F75761008E8EE1 /* StationName+CoreDataClass.swift in Sources */,
 				753C8FAC223623C2005FF13B /* SearchTrainInteractor.swift in Sources */,
 				753F087122361A6500175107 /* AppConstants.swift in Sources */,
 				753F0847223618AB00175107 /* AppDelegate.swift in Sources */,
@@ -539,7 +573,9 @@
 				DB3DE38026F71742008E8EE1 /* NetworkSessionExtension.swift in Sources */,
 				753C8FB022365E9A005FF13B /* SearchTrainRouter.swift in Sources */,
 				DB3DE38926F717A8008E8EE1 /* ServerError.swift in Sources */,
+				DB3DE3A326F7723A008E8EE1 /* StationListCell.swift in Sources */,
 				DB3DE39326F71862008E8EE1 /* NetworkDataTaskProtocol.swift in Sources */,
+				DB3DE3A626F7809E008E8EE1 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -814,6 +850,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DB3DE39B26F754D3008E8EE1 /* MyTravelHelper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DB3DE39C26F754D3008E8EE1 /* MyTravelHelper.xcdatamodel */,
+			);
+			currentVersion = DB3DE39C26F754D3008E8EE1 /* MyTravelHelper.xcdatamodel */;
+			path = MyTravelHelper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 753F083B223618AB00175107 /* Project object */;
 }

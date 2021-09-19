@@ -8,22 +8,23 @@
 
 import UIKit
 class SearchTrainRouter: PresenterToRouterProtocol {
-    static func createModule() -> SearchTrainViewController {
-        let view = mainstoryboard.instantiateViewController(withIdentifier: "searchTrain") as! SearchTrainViewController
-        let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = SearchTrainPresenter()
-        let interactor: PresenterToInteractorProtocol = SearchTrainInteractor()
-        let router:PresenterToRouterProtocol = SearchTrainRouter()
+    static func createModule() -> SearchTrainViewController? {
+        if let view = mainstoryboard.instantiateViewController(withIdentifier: SearchTrainViewController.name) as? SearchTrainViewController {
+            let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = SearchTrainPresenter()
+            let interactor: PresenterToInteractorProtocol = SearchTrainInteractor()
+            let router:PresenterToRouterProtocol = SearchTrainRouter()
 
-        view.presenter = presenter
-        presenter.view = view
-        presenter.router = router
-        presenter.interactor = interactor
-        interactor.presenter = presenter
-
-        return view
+            view.presenter = presenter
+            presenter.view = view
+            presenter.router = router
+            presenter.interactor = interactor
+            interactor.presenter = presenter
+            return view
+        }
+        return nil
     }
 
-    static var mainstoryboard: UIStoryboard{
+    static var mainstoryboard: UIStoryboard {
         return UIStoryboard(name:"Main",bundle: Bundle.main)
     }
 }

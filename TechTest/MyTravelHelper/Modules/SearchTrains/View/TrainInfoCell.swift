@@ -14,4 +14,16 @@ class TrainInfoCell: UITableViewCell {
     @IBOutlet weak var destinationInfoLabel: UILabel!
     @IBOutlet weak var souceInfoLabel: UILabel!
     @IBOutlet weak var trainCode: UILabel!
+    
+    
+    func configureFor(train: StationTrain) {
+        self.trainCode.text = train.trainCode
+        self.souceInfoLabel.text = train.stationFullName
+        self.sourceTimeLabel.text = train.expDeparture
+        if let _destinationDetails = train.destinationDetails {
+            self.destinationInfoLabel.text = _destinationDetails.locationFullName
+            self.destinationTimeLabel.text = _destinationDetails.expDeparture
+        }
+    }
+
 }
