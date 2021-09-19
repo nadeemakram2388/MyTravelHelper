@@ -91,9 +91,7 @@ open class Reach {
     }
     
     func isNetworkReachable() -> Bool {
-        
         let status = connectionStatus()
-        
         switch status {
         case .unknown, .offline:
             return false
