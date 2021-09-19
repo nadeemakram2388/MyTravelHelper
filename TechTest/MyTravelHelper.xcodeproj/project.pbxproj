@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,6 +29,18 @@
 		8CBBCE0D40B8FE266A1617DE /* Pods_MyTravelHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF635B96516F13D67ADE01AF /* Pods_MyTravelHelper.framework */; };
 		DB3DE36E26F70B99008E8EE1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE36D26F70B99008E8EE1 /* StringExtension.swift */; };
 		DB3DE37226F70E1A008E8EE1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB3DE37426F70E1A008E8EE1 /* Localizable.strings */; };
+		DB3DE37826F71686008E8EE1 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE37726F71686008E8EE1 /* NetworkConstant.swift */; };
+		DB3DE37C26F7171D008E8EE1 /* NetworkResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE37B26F7171D008E8EE1 /* NetworkResponseExtension.swift */; };
+		DB3DE37E26F71730008E8EE1 /* NetworkDataTaskExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE37D26F71730008E8EE1 /* NetworkDataTaskExtension.swift */; };
+		DB3DE38026F71742008E8EE1 /* NetworkSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE37F26F71742008E8EE1 /* NetworkSessionExtension.swift */; };
+		DB3DE38526F71775008E8EE1 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE38426F71775008E8EE1 /* NetworkClient.swift */; };
+		DB3DE38726F71791008E8EE1 /* NetworkMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE38626F71791008E8EE1 /* NetworkMethod.swift */; };
+		DB3DE38926F717A8008E8EE1 /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE38826F717A8008E8EE1 /* ServerError.swift */; };
+		DB3DE38B26F717B8008E8EE1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE38A26F717B8008E8EE1 /* NetworkError.swift */; };
+		DB3DE38E26F7181B008E8EE1 /* NetworkApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE38D26F7181B008E8EE1 /* NetworkApiEndpoint.swift */; };
+		DB3DE39126F7184A008E8EE1 /* NetworkSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE39026F7184A008E8EE1 /* NetworkSessionProtocol.swift */; };
+		DB3DE39326F71862008E8EE1 /* NetworkDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE39226F71862008E8EE1 /* NetworkDataTaskProtocol.swift */; };
+		DB3DE39526F71875008E8EE1 /* NetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE39426F71875008E8EE1 /* NetworkRequestProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +84,18 @@
 		BD4A9E0F8C97F8AA92AAA053 /* Pods_MyTravelHelperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTravelHelperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB3DE36D26F70B99008E8EE1 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		DB3DE37326F70E1A008E8EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DB3DE37726F71686008E8EE1 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		DB3DE37B26F7171D008E8EE1 /* NetworkResponseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseExtension.swift; sourceTree = "<group>"; };
+		DB3DE37D26F71730008E8EE1 /* NetworkDataTaskExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataTaskExtension.swift; sourceTree = "<group>"; };
+		DB3DE37F26F71742008E8EE1 /* NetworkSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionExtension.swift; sourceTree = "<group>"; };
+		DB3DE38426F71775008E8EE1 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		DB3DE38626F71791008E8EE1 /* NetworkMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMethod.swift; sourceTree = "<group>"; };
+		DB3DE38826F717A8008E8EE1 /* ServerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
+		DB3DE38A26F717B8008E8EE1 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		DB3DE38D26F7181B008E8EE1 /* NetworkApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApiEndpoint.swift; sourceTree = "<group>"; };
+		DB3DE39026F7184A008E8EE1 /* NetworkSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionProtocol.swift; sourceTree = "<group>"; };
+		DB3DE39226F71862008E8EE1 /* NetworkDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataTaskProtocol.swift; sourceTree = "<group>"; };
+		DB3DE39426F71875008E8EE1 /* NetworkRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +170,7 @@
 		753F0845223618AB00175107 /* MyTravelHelper */ = {
 			isa = PBXGroup;
 			children = (
+				DB3DE37526F71657008E8EE1 /* Networking */,
 				DB3DE36F26F70D74008E8EE1 /* SupportingFiles */,
 				DB3DE36C26F70B83008E8EE1 /* Extension */,
 				753C8FB822367E64005FF13B /* App-Ui */,
@@ -264,6 +289,65 @@
 				DB3DE37426F70E1A008E8EE1 /* Localizable.strings */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		DB3DE37526F71657008E8EE1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DB3DE38F26F71838008E8EE1 /* NetworkProtocols */,
+				DB3DE38C26F71806008E8EE1 /* NetworkEndpints */,
+				DB3DE38326F71768008E8EE1 /* NetworkClients */,
+				DB3DE37A26F7170C008E8EE1 /* NetworkExtension */,
+				DB3DE37626F71665008E8EE1 /* NetworkConstant */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DB3DE37626F71665008E8EE1 /* NetworkConstant */ = {
+			isa = PBXGroup;
+			children = (
+				DB3DE37726F71686008E8EE1 /* NetworkConstant.swift */,
+			);
+			path = NetworkConstant;
+			sourceTree = "<group>";
+		};
+		DB3DE37A26F7170C008E8EE1 /* NetworkExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DB3DE37B26F7171D008E8EE1 /* NetworkResponseExtension.swift */,
+				DB3DE37D26F71730008E8EE1 /* NetworkDataTaskExtension.swift */,
+				DB3DE37F26F71742008E8EE1 /* NetworkSessionExtension.swift */,
+			);
+			path = NetworkExtension;
+			sourceTree = "<group>";
+		};
+		DB3DE38326F71768008E8EE1 /* NetworkClients */ = {
+			isa = PBXGroup;
+			children = (
+				DB3DE38426F71775008E8EE1 /* NetworkClient.swift */,
+				DB3DE38626F71791008E8EE1 /* NetworkMethod.swift */,
+				DB3DE38826F717A8008E8EE1 /* ServerError.swift */,
+				DB3DE38A26F717B8008E8EE1 /* NetworkError.swift */,
+			);
+			path = NetworkClients;
+			sourceTree = "<group>";
+		};
+		DB3DE38C26F71806008E8EE1 /* NetworkEndpints */ = {
+			isa = PBXGroup;
+			children = (
+				DB3DE38D26F7181B008E8EE1 /* NetworkApiEndpoint.swift */,
+			);
+			path = NetworkEndpints;
+			sourceTree = "<group>";
+		};
+		DB3DE38F26F71838008E8EE1 /* NetworkProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				DB3DE39026F7184A008E8EE1 /* NetworkSessionProtocol.swift */,
+				DB3DE39226F71862008E8EE1 /* NetworkDataTaskProtocol.swift */,
+				DB3DE39426F71875008E8EE1 /* NetworkRequestProtocol.swift */,
+			);
+			path = NetworkProtocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,23 +494,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MyTravelHelper/Pods-MyTravelHelper-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
-				"${BUILT_PRODUCTS_DIR}/XMLParsing/XMLParsing.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTravelHelper/Pods-MyTravelHelper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMLParsing.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTravelHelper/Pods-MyTravelHelper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTravelHelper/Pods-MyTravelHelper-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyTravelHelper/Pods-MyTravelHelper-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -437,20 +514,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				753C8FBA2236BD80005FF13B /* TrainInfoCell.swift in Sources */,
+				DB3DE38726F71791008E8EE1 /* NetworkMethod.swift in Sources */,
+				DB3DE38B26F717B8008E8EE1 /* NetworkError.swift in Sources */,
 				753C8FA822361FC0005FF13B /* SearchTrainProtocols.swift in Sources */,
 				DB3DE36E26F70B99008E8EE1 /* StringExtension.swift in Sources */,
 				753C8FAA2236228C005FF13B /* SearchTrainPresenter.swift in Sources */,
+				DB3DE37C26F7171D008E8EE1 /* NetworkResponseExtension.swift in Sources */,
+				DB3DE39126F7184A008E8EE1 /* NetworkSessionProtocol.swift in Sources */,
+				DB3DE37826F71686008E8EE1 /* NetworkConstant.swift in Sources */,
+				DB3DE38E26F7181B008E8EE1 /* NetworkApiEndpoint.swift in Sources */,
 				753C8FAE22362463005FF13B /* SearchTrainViewController.swift in Sources */,
 				753C8FB722367DF4005FF13B /* ProgressIndicator.swift in Sources */,
 				753C8FB522367D1C005FF13B /* AppUtils.swift in Sources */,
 				753C8FA522361EC9005FF13B /* StationInfo.swift in Sources */,
 				753C8FBC223731E3005FF13B /* Reachability.swift in Sources */,
+				DB3DE38526F71775008E8EE1 /* NetworkClient.swift in Sources */,
 				753C8FA622361EC9005FF13B /* Stations.swift in Sources */,
 				753C8FAC223623C2005FF13B /* SearchTrainInteractor.swift in Sources */,
 				753F087122361A6500175107 /* AppConstants.swift in Sources */,
 				753F0847223618AB00175107 /* AppDelegate.swift in Sources */,
+				DB3DE39526F71875008E8EE1 /* NetworkRequestProtocol.swift in Sources */,
+				DB3DE37E26F71730008E8EE1 /* NetworkDataTaskExtension.swift in Sources */,
 				753C8FA422361EC9005FF13B /* TrainMovements.swift in Sources */,
+				DB3DE38026F71742008E8EE1 /* NetworkSessionExtension.swift in Sources */,
 				753C8FB022365E9A005FF13B /* SearchTrainRouter.swift in Sources */,
+				DB3DE38926F717A8008E8EE1 /* ServerError.swift in Sources */,
+				DB3DE39326F71862008E8EE1 /* NetworkDataTaskProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

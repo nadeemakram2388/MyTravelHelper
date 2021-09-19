@@ -12,8 +12,8 @@
 "Common.noInternet" = "No Internet";
 "Common.loadingStation" = "Please wait loading station list ....";
 "Common.pleasewait" = "Please wait..";
-
-
+"Common.pleasewait" = "Please wait..";
+"Common.somthingWentWrong" = "Somthing went wrong!";
 
 
 //MARK: Search Train

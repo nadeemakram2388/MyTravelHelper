@@ -12,7 +12,7 @@ import UIKit
 /* Show Progress Indicator */
 func showProgressIndicator(view:UIView){
     view.isUserInteractionEnabled = false
-    let progressIndicator = ProgressIndicator(text: "Please wait..")
+    let progressIndicator = ProgressIndicator(text: AppText.pleaseWait.string)
     progressIndicator.tag = PROGRESS_INDICATOR_VIEW_TAG
     view.addSubview(progressIndicator)
 }

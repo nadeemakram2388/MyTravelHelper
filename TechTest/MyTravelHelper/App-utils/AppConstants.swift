@@ -10,6 +10,9 @@ import Foundation
 
 let PROGRESS_INDICATOR_VIEW_TAG: Int = 10
 
+struct AppConstants {
+    
+}
 
 enum AppText {
     case internetIssue
@@ -22,6 +25,7 @@ enum AppText {
     case noTrainFromSourceDestiIn90min
     case invalidSourceDesti
     case validationSourceDesti
+    case somthingWentWrong
 
     var string: String {
         switch self {
@@ -45,6 +49,9 @@ enum AppText {
             return "SearchTrain.invalidSourceDesti".localized()
         case .validationSourceDesti:
             return "SearchTrain.validationSourceDesti".localized()
+        case .somthingWentWrong:
+            return "Somthing went wrong!".localized()
+
         }
     }
 }
