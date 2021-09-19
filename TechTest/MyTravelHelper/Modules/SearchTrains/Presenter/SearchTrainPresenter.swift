@@ -13,9 +13,7 @@ class SearchTrainPresenter:ViewToPresenterProtocol {
     var trains: [StationTrain]?
 
     func searchTapped(source: String, destination: String) {
-        let sourceStationCode = getStationCode(stationName: source)
-        let destinationStationCode = getStationCode(stationName: destination)
-        interactor?.fetchTrainsFromSource(sourceCode: sourceStationCode, destinationCode: destinationStationCode)
+        interactor?.fetchTrainsFromSource(sourceCode: source, destinationCode: destination)
     }
     
     var interactor: PresenterToInteractorProtocol?
@@ -24,10 +22,6 @@ class SearchTrainPresenter:ViewToPresenterProtocol {
 
     func fetchallStations() {
         interactor?.fetchallStations()
-    }
-
-    private func getStationCode(stationName: String) -> String {
-        return stations.filter{$0.stationDesc == stationName}.first?.stationCode?.lowercased() ?? ""
     }
 }
 

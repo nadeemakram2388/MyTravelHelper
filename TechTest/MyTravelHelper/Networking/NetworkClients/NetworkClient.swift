@@ -33,7 +33,7 @@ class NetworkClient {
     // MARK: - Data Task Helper
     func dataTask(_ request: NetworkRequestProtocol, completion: @escaping CompletionResult) {
         completionResult = completion
-        var urlRequest = URLRequest(url: request.baseURL.appendingPathComponent(request.path),
+        var urlRequest = URLRequest(url: URL(string: request.baseURL.appendingPathComponent(request.path).absoluteString.removingPercentEncoding!)!,
                                     cachePolicy: .reloadIgnoringLocalAndRemoteCacheData,
                                     timeoutInterval: AppConstants.Service.timeout)
         urlRequest.httpMethod = request.httpMethod.rawValue

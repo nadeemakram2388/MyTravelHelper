@@ -116,9 +116,6 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="axy-c0-py1" firstAttribute="centerX" secondItem="mLO-fM-0tG" secondAttribute="centerX" id="t8w-VE-hf7"/>
-                                                    </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JOL-NR-KJh">
                                                     <rect key="frame" x="26" y="129" width="323" height="20.5"/>
@@ -146,7 +143,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="mLO-fM-0tG" secondAttribute="trailing" constant="10" id="5k6-fv-ljO"/>
+                                                <constraint firstAttribute="bottom" secondItem="JOL-NR-KJh" secondAttribute="bottom" constant="29.5" id="ADj-EP-mvf"/>
                                                 <constraint firstItem="NKY-CA-red" firstAttribute="top" secondItem="f5e-1p-EyP" secondAttribute="top" constant="20" id="GhP-oJ-lyA"/>
+                                                <constraint firstItem="JOL-NR-KJh" firstAttribute="top" secondItem="f5e-1p-EyP" secondAttribute="top" constant="129" id="IAA-8D-eHS"/>
                                                 <constraint firstItem="mLO-fM-0tG" firstAttribute="top" secondItem="NKY-CA-red" secondAttribute="bottom" constant="10" id="Q3j-1P-Y0Q"/>
                                                 <constraint firstItem="NKY-CA-red" firstAttribute="width" secondItem="f5e-1p-EyP" secondAttribute="width" multiplier="100:375" id="W6q-aH-HD9"/>
                                                 <constraint firstItem="JOL-NR-KJh" firstAttribute="leading" secondItem="mLO-fM-0tG" secondAttribute="leading" id="afh-nw-sAW"/>
@@ -160,8 +159,11 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <outlet property="destinationInfoLabel" destination="BCa-jD-jy0" id="WO1-Qd-PHB"/>
                                             <outlet property="destinationTimeLabel" destination="jb9-tb-gO2" id="cyj-wE-t0c"/>
+                                            <outlet property="souceInfoLabel" destination="UBA-gH-Bcr" id="kjO-bD-l1j"/>
                                             <outlet property="sourceTimeLabel" destination="hjt-Ml-BGq" id="eHB-cz-KvV"/>
+                                            <outlet property="trainCode" destination="YbZ-Bg-X3V" id="VFy-cU-MDP"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StationListCell" rowHeight="62" id="4E3-jJ-9kR" userLabel="StationListCell" customClass="StationListCell" customModule="MyTravelHelper" customModuleProvider="target">
