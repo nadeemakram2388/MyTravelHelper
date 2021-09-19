@@ -23,7 +23,7 @@ class SearchTrainInteractor: PresenterToInteractorProtocol {
     func fetchallStations() {
         let stations = self.fetchStationsFromDB()
         if stations.count > 0 {
-            self.presenter!.stationListFetched(list: stations)
+            self.presenter?.stationListFetched(list: stations)
         } else {
             if Reach().isNetworkReachable() == true {
                 httpClient.dataTask(NetworkAPI.getAllStationsXML) { [weak self] (result) in

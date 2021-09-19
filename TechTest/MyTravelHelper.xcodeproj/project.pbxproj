@@ -48,6 +48,12 @@
 		DB3DE3A126F75761008E8EE1 /* StationName+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE39F26F75761008E8EE1 /* StationName+CoreDataProperties.swift */; };
 		DB3DE3A326F7723A008E8EE1 /* StationListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE3A226F7723A008E8EE1 /* StationListCell.swift */; };
 		DB3DE3A626F7809E008E8EE1 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE3A526F7809E008E8EE1 /* CustomTextField.swift */; };
+		DB3DE3A826F7A703008E8EE1 /* SearchTrainInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE3A726F7A703008E8EE1 /* SearchTrainInteractorTests.swift */; };
+		DB3DE3AA26F7B39C008E8EE1 /* MockItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE3A926F7B39C008E8EE1 /* MockItem.swift */; };
+		DB3DE3AF26F7B6C3008E8EE1 /* MockNetworkDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE3AC26F7B6C3008E8EE1 /* MockNetworkDataTask.swift */; };
+		DB3DE3B026F7B6C3008E8EE1 /* MockNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE3AD26F7B6C3008E8EE1 /* MockNetworkSession.swift */; };
+		DB3DE3B126F7B6C3008E8EE1 /* BadMockNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE3AE26F7B6C3008E8EE1 /* BadMockNetworkSession.swift */; };
+		DB3DE3B326F7B726008E8EE1 /* MockRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE3B226F7B726008E8EE1 /* MockRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +116,12 @@
 		DB3DE39F26F75761008E8EE1 /* StationName+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StationName+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		DB3DE3A226F7723A008E8EE1 /* StationListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListCell.swift; sourceTree = "<group>"; };
 		DB3DE3A526F7809E008E8EE1 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		DB3DE3A726F7A703008E8EE1 /* SearchTrainInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTrainInteractorTests.swift; sourceTree = "<group>"; };
+		DB3DE3A926F7B39C008E8EE1 /* MockItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockItem.swift; sourceTree = "<group>"; };
+		DB3DE3AC26F7B6C3008E8EE1 /* MockNetworkDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkDataTask.swift; sourceTree = "<group>"; };
+		DB3DE3AD26F7B6C3008E8EE1 /* MockNetworkSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkSession.swift; sourceTree = "<group>"; };
+		DB3DE3AE26F7B6C3008E8EE1 /* BadMockNetworkSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadMockNetworkSession.swift; sourceTree = "<group>"; };
+		DB3DE3B226F7B726008E8EE1 /* MockRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +215,10 @@
 			children = (
 				753C8FBD2237367E005FF13B /* SearchTrainPresenterTests.swift */,
 				753F085D223618AE00175107 /* Info.plist */,
+				DB3DE3A726F7A703008E8EE1 /* SearchTrainInteractorTests.swift */,
+				DB3DE3A926F7B39C008E8EE1 /* MockItem.swift */,
+				DB3DE3B226F7B726008E8EE1 /* MockRequest.swift */,
+				DB3DE3AB26F7B6C3008E8EE1 /* MockNetworking */,
 			);
 			path = MyTravelHelperTests;
 			sourceTree = "<group>";
@@ -377,6 +393,16 @@
 				DB3DE39926F7540E008E8EE1 /* CoreDataHelper.swift */,
 			);
 			path = Database;
+			sourceTree = "<group>";
+		};
+		DB3DE3AB26F7B6C3008E8EE1 /* MockNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DB3DE3AC26F7B6C3008E8EE1 /* MockNetworkDataTask.swift */,
+				DB3DE3AD26F7B6C3008E8EE1 /* MockNetworkSession.swift */,
+				DB3DE3AE26F7B6C3008E8EE1 /* BadMockNetworkSession.swift */,
+			);
+			path = MockNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -583,6 +609,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB3DE3AA26F7B39C008E8EE1 /* MockItem.swift in Sources */,
+				DB3DE3B326F7B726008E8EE1 /* MockRequest.swift in Sources */,
+				DB3DE3AF26F7B6C3008E8EE1 /* MockNetworkDataTask.swift in Sources */,
+				DB3DE3B026F7B6C3008E8EE1 /* MockNetworkSession.swift in Sources */,
+				DB3DE3B126F7B6C3008E8EE1 /* BadMockNetworkSession.swift in Sources */,
+				DB3DE3A826F7A703008E8EE1 /* SearchTrainInteractorTests.swift in Sources */,
 				753C8FBE2237367E005FF13B /* SearchTrainPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

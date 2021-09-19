@@ -23,7 +23,6 @@ class SearchTrainPresenterTests: XCTestCase {
 
     func testfetchallStations() {
         presenter.fetchallStations()
-
         XCTAssertTrue(view.isSaveFetchedStatinsCalled)
     }
 
@@ -34,9 +33,10 @@ class SearchTrainPresenterTests: XCTestCase {
 
 
 class SearchTrainMockView:PresenterToViewProtocol {
+    
     var isSaveFetchedStatinsCalled = false
 
-    func saveFetchedStations(stations: [Station]?) {
+    func saveFetchedStations(stations: [StationName]?) {
         isSaveFetchedStatinsCalled = true
     }
 
@@ -62,10 +62,18 @@ class SearchTrainMockView:PresenterToViewProtocol {
 }
 
 class SearchTrainInteractorMock:PresenterToInteractorProtocol {
+    func updateFavorite(station: StationName) {
+    
+    }
+    
     var presenter: InteractorToPresenterProtocol?
 
     func fetchallStations() {
-        let station = Station(desc: "Belfast Central", latitude: 54.6123, longitude: -5.91744, code: "BFSTC", stationId: 228)
+        let station = StationName(context: CoreDataHelper.shared().managedObjectContext)
+        station.stationId = Int16(228)
+        station.stationDesc = "Belfast Central"
+        station.stationLatitude = 54.6123
+        station.stationLongitude = -5.91744
         presenter?.stationListFetched(list: [station])
     }
 
