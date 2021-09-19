@@ -13,7 +13,7 @@ class SearchTrainInteractor: PresenterToInteractorProtocol {
     var _sourceStationCode = String()
     var _destinationStationCode = String()
     var presenter: InteractorToPresenterProtocol?
-    let coreDataManager = CoreDataManager.shared()
+    let coreDataManager = CoreDataHelper.shared()
 
     private var httpClient: NetworkClient!
     init(client: NetworkClient? = nil) {
