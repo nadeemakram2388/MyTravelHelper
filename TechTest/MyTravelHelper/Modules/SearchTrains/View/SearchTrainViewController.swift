@@ -29,7 +29,7 @@ class SearchTrainViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         if stationsList.count == 0 {
             SwiftSpinner.useContainerView(view)
-            SwiftSpinner.show("Please wait loading station list ....")
+            SwiftSpinner.show(AppText.loadingStation.string)
             presenter?.fetchallStations()
         }
     }
@@ -45,13 +45,13 @@ extension SearchTrainViewController:PresenterToViewProtocol {
     func showNoInterNetAvailabilityMessage() {
         trainsListTable.isHidden = true
         hideProgressIndicator(view: self.view)
-        showAlert(title: "No Internet", message: "Please Check you internet connection and try again", actionTitle: "Okay")
+        showAlert(title: AppText.noInternet.string, message: AppText.internetIssue.string, actionTitle: AppText.okay.string)
     }
 
     func showNoTrainAvailbilityFromSource() {
         trainsListTable.isHidden = true
         hideProgressIndicator(view: self.view)
-        showAlert(title: "No Trains", message: "Sorry No trains arriving source station in another 90 mins", actionTitle: "Okay")
+        showAlert(title: AppText.noTrain.string, message: AppText.noTrainArrivingIn90min.string, actionTitle: AppText.okay.string)
     }
 
     func updateLatestTrainList(trainsList: [StationTrain]) {
@@ -65,7 +65,7 @@ extension SearchTrainViewController:PresenterToViewProtocol {
         trainsListTable.isHidden = true
         hideProgressIndicator(view: self.view)
         trainsListTable.isHidden = true
-        showAlert(title: "No Trains", message: "Sorry No trains Found from source to destination in another 90 mins", actionTitle: "Okay")
+        showAlert(title: AppText.noTrain.string, message: AppText.noTrainFromSourceDestiIn90min.string, actionTitle: AppText.okay.string)
     }
 
     func showAlert(title:String,message:String,actionTitle:String) {
@@ -77,7 +77,7 @@ extension SearchTrainViewController:PresenterToViewProtocol {
     func showInvalidSourceOrDestinationAlert() {
         trainsListTable.isHidden = true
         hideProgressIndicator(view: self.view)
-        showAlert(title: "Invalid Source/Destination", message: "Invalid Source or Destination Station names Please Check", actionTitle: "Okay")
+        showAlert(title: AppText.invalidSourceDesti.string, message: AppText.validationSourceDesti.string, actionTitle: AppText.okay.string)
     }
 
     func saveFetchedStations(stations: [Station]?) {

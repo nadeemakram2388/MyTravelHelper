@@ -27,6 +27,8 @@
 		753F0851223618AD00175107 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753F084F223618AD00175107 /* LaunchScreen.storyboard */; };
 		753F087122361A6500175107 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753F087022361A6500175107 /* AppConstants.swift */; };
 		8CBBCE0D40B8FE266A1617DE /* Pods_MyTravelHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF635B96516F13D67ADE01AF /* Pods_MyTravelHelper.framework */; };
+		DB3DE36E26F70B99008E8EE1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DE36D26F70B99008E8EE1 /* StringExtension.swift */; };
+		DB3DE37226F70E1A008E8EE1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB3DE37426F70E1A008E8EE1 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		849A0A29A57A433EA5AB15FB /* Pods-MyTravelHelperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTravelHelperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTravelHelperTests/Pods-MyTravelHelperTests.release.xcconfig"; sourceTree = "<group>"; };
 		AF635B96516F13D67ADE01AF /* Pods_MyTravelHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTravelHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4A9E0F8C97F8AA92AAA053 /* Pods_MyTravelHelperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTravelHelperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB3DE36D26F70B99008E8EE1 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		DB3DE37326F70E1A008E8EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,8 @@
 		753F0845223618AB00175107 /* MyTravelHelper */ = {
 			isa = PBXGroup;
 			children = (
+				DB3DE36F26F70D74008E8EE1 /* SupportingFiles */,
+				DB3DE36C26F70B83008E8EE1 /* Extension */,
 				753C8FB822367E64005FF13B /* App-Ui */,
 				753F086F22361A5100175107 /* App-utils */,
 				753F08672236190700175107 /* Modules */,
@@ -244,6 +250,22 @@
 			path = "App-utils";
 			sourceTree = "<group>";
 		};
+		DB3DE36C26F70B83008E8EE1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DB3DE36D26F70B99008E8EE1 /* StringExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DB3DE36F26F70D74008E8EE1 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DB3DE37426F70E1A008E8EE1 /* Localizable.strings */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -331,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				753F0851223618AD00175107 /* LaunchScreen.storyboard in Resources */,
+				DB3DE37226F70E1A008E8EE1 /* Localizable.strings in Resources */,
 				753F084E223618AD00175107 /* Assets.xcassets in Resources */,
 				753F084C223618AB00175107 /* Main.storyboard in Resources */,
 			);
@@ -415,6 +438,7 @@
 			files = (
 				753C8FBA2236BD80005FF13B /* TrainInfoCell.swift in Sources */,
 				753C8FA822361FC0005FF13B /* SearchTrainProtocols.swift in Sources */,
+				DB3DE36E26F70B99008E8EE1 /* StringExtension.swift in Sources */,
 				753C8FAA2236228C005FF13B /* SearchTrainPresenter.swift in Sources */,
 				753C8FAE22362463005FF13B /* SearchTrainViewController.swift in Sources */,
 				753C8FB722367DF4005FF13B /* ProgressIndicator.swift in Sources */,
@@ -463,6 +487,14 @@
 				753F0850223618AD00175107 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DB3DE37426F70E1A008E8EE1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB3DE37326F70E1A008E8EE1 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  MyTravelHelper
+
+  Created by nadeem akram on 9/19/21.
+  Copyright © 2021 Sample. All rights reserved.
+*/
+
+//MARK: Common
+"Common.internetIssue" = "Please Check you internet connection and try again";
+"Common.Okay" = "Okay";
+"Common.noInternet" = "No Internet";
+"Common.loadingStation" = "Please wait loading station list ....";
+"Common.pleasewait" = "Please wait..";
+
+
+
+
+//MARK: Search Train
+"SearchTrain.noTrain" = "No Trains";
+"SearchTrain.noTrainArrivingIn90min" = "Sorry No trains arriving source station in another 90 mins";
+"SearchTrain.noTrainFromSourceDestiIn90min" = "Sorry No trains Found from source to destination in another 90 mins";
+"SearchTrain.invalidSourceDesti" = "Invalid Source/Destination";
+"SearchTrain.validationSourceDesti" = "Invalid Source or Destination Station names Please Check";
