@@ -8,7 +8,6 @@
 
 import UIKit
 import SwiftSpinner
-import DropDown
 
 class SearchTrainViewController: UIViewController {
     @IBOutlet weak var destinationTextField: CustomTextField!
@@ -18,7 +17,6 @@ class SearchTrainViewController: UIViewController {
     var stationsList:[StationName] = [StationName]()
     var trains:[StationTrain] = [StationTrain]()
     var presenter:ViewToPresenterProtocol?
-    //var dropDown = DropDown()
     var transitPoints:(source:String, destination:String) = ("","")
     var searchMode = true
 
